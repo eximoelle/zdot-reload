@@ -11,10 +11,6 @@ ZFUNCDIR=${ZFUNCDIR:-$ZDOTDIR/functions}
 fpath=($ZFUNCDIR $fpath)
 autoload -Uz $fpath[1]/*(.:t)
 
-# Solution for 'complete:13: command not found: compdef'
-# from https://linux-notes.org/oshibka-complete-13-command-not-found-compdef-v-zsh-na-mac-os/
-autoload -Uz compinit && compinit
-
 # Source zstyles you might use with antidote.
 [[ -e ${ZDOTDIR:-~}/.zstyles ]] && source ${ZDOTDIR:-~}/.zstyles
 
@@ -25,6 +21,10 @@ autoload -Uz compinit && compinit
 # Create an amazing Zsh config using antidote plugins.
 source ${ZDOTDIR:-~}/.antidote/antidote.zsh
 antidote load
+
+# Solution for 'complete:13: command not found: compdef'
+# from https://linux-notes.org/oshibka-complete-13-command-not-found-compdef-v-zsh-na-mac-os/
+autoload -Uz compinit && compinit
 
 # Bind arrow up, arrow down to list history substring search
 # Refer to: https://github.com/zsh-users/zsh-history-substring-search#usage
