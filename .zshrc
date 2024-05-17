@@ -30,3 +30,7 @@ autoload -Uz compinit && compinit
 # Refer to: https://github.com/zsh-users/zsh-history-substring-search#usage
 bindkey '^[[A' history-substring-search-up
 bindkey '^[[B' history-substring-search-down
+
+a () {
+    jq -r '. | to_entries[] | "||\(.key) | \(.value)||"' <<< $@ | sed -e '1s/^/#|\n/; $s/$/\n|#/'
+    }

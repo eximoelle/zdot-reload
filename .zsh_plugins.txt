@@ -78,9 +78,9 @@ $ZDOTDIR/.aliases
 # romkatv/powerlevel10k kind:fpath
 
 # Or, just load a prompt plugin the normal way.
-# sindresorhus/pure
+sindresorhus/pure
 # romkatv/powerlevel10k
-spaceship-prompt/spaceship-prompt
+#spaceship-prompt/spaceship-prompt
 
 ### Utilities
 #
@@ -206,9 +206,11 @@ zdharma-continuum/fast-syntax-highlighting kind:defer
 #
 ###
 
+#usr/local/share/zsh/site-functions kind:fpath
+
 # With antidote, using Zephyr's completion plugin is recommended. This plugin is meant
 # to be run near the TOP of your .zsh_plugins.txt file.
-mattmc3/zephyr path:plugins/completion
+#mattmc3/zephyr path:plugins/completion
 
 # zsh-users/zsh-completions is a popular plugin for adding supplemental completions.
 # We combine the `path:` and `kind:fpath` annotations here:
