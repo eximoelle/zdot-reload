@@ -206,6 +206,8 @@ zdharma-continuum/fast-syntax-highlighting kind:defer
 #
 ###
 
+usr/local/share/zsh/site-functions kind:fpath
+
 # With antidote, using Zephyr's completion plugin is recommended. This plugin is meant
 # to be run near the TOP of your .zsh_plugins.txt file.
 mattmc3/zephyr path:plugins/completion

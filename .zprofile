@@ -33,3 +33,5 @@ path=(
   /usr/local/{,s}bin(N)
   $path
 )
+
+export HOMEBREW_NO_INSTALL_FROM_API=1
