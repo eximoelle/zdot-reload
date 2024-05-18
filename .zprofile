@@ -15,8 +15,8 @@ fi
 # Editors
 #
 
-export EDITOR="${EDITOR:-vim}"
-export VISUAL="${VISUAL:-vim}"
+export EDITOR="${EDITOR:-nvim}"
+export VISUAL="${VISUAL:-nvim}"
 export PAGER="${PAGER:-less}"
 
 #
@@ -33,5 +33,3 @@ path=(
   /usr/local/{,s}bin(N)
   $path
 )
-
-export HOMEBREW_NO_INSTALL_FROM_API=1
