@@ -37,3 +37,5 @@ path=(
 # Recommend from homebrew documentation. Further info: brew help shellenv
 # Universal solution for Apple Silicon and Intel prefixes of homebrew
 eval "$($(brew --prefix)/bin/brew shellenv)"
+
+export BREWPREFIX="$(brew --prefix)"
