@@ -38,4 +38,9 @@ path=(
 # Universal solution for Apple Silicon and Intel prefixes of homebrew
 eval "$($(brew --prefix)/bin/brew shellenv)"
 
-export BREWPREFIX="$(brew --prefix)"
+# Если PyEnv установлен (есть каталог .pyenv), то инициализировать PyEnv
+if [[ -d "$HOME/.pyenv" ]]; then
+  export PYENV_ROOT="$HOME/.pyenv"
+  export PATH="$PYENV_ROOT/bin:$PATH"
+  eval "$(pyenv init --path)"
+fi
