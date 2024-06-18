@@ -44,3 +44,8 @@ if [[ -d "$HOME/.pyenv" ]]; then
   export PATH="$PYENV_ROOT/bin:$PATH"
   eval "$(pyenv init --path)"
 fi
+
+# Если openjdk установлен, то добавить его в PATH
+if [[ -d "$(brew --prefix)/opt/openjdk/" ]]; then
+  export PATH="$(brew --prefix)/opt/openjdk/bin:$PATH"
+fi
