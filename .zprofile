@@ -49,3 +49,11 @@ fi
 if [[ -d "$(brew --prefix)/opt/openjdk/" ]]; then
   export PATH="$(brew --prefix)/opt/openjdk/bin:$PATH"
 fi
+
+# Для NVM, если установлен
+# Создать директорию ~/.nvm, как написано в caveats при установке
+# Тут потенциальное место для ошибки, если .nvm не будет создан. Надо подумать, как переделать нормально потом.
+if [[ -d "$(brew --prefix)/opt/nvm/" ]]; then
+  export NVM_DIR="$HOME/.nvm"
+  [ -s "$(homebrew --prefix)/opt/nvm/nvm.sh" ] && \. "$(homebrew --prefix)/opt/nvm/nvm.sh"  # This loads nvm
+  [ -s "$(homebrew --prefix)/opt/nvm/etc/bash_completion.d/nvm" ] && \. "$(homebrew --prefix)/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
