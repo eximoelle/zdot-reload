@@ -188,6 +188,17 @@ belak/zsh-utils path:history
 # certain plugins, this can greatly increase your zsh startup speed.
 #
 ###
+# NVM Node Version Manager https://github.com/lukechilds/zsh-nvm
+lukechilds/zsh-nvm kind:defer
+
+# PyEnv Lazy Load https://github.com/davidparsson/zsh-pyenv-lazy
+davidparsson/zsh-pyenv-lazy kind:defer
+
+#JVM Java Version Manager https://github.com/caarlos0-graveyard/jvm
+#caarlos0/jvm kind:defer
+
+lockons/jdk-switch kind:defer
+
 # Syntax highlighting
 #zsh-users/zsh-syntax-highlighting kind:defer
 zdharma-continuum/fast-syntax-highlighting kind:defer

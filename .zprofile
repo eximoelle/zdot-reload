@@ -31,12 +31,8 @@ path=(
   $HOME/{,s}bin(N)
   /opt/{homebrew,local}/{,s}bin(N)
   /usr/local/{,s}bin(N)
-  $HOMEBREW_PREFIX/opt/openjdk/bin
   $path
 )
 
-# Для PyEnv
-export PYENV_ROOT="$HOME/.pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init --path)"
-
+# Export variables HOMEBREW_PREFIX, HOMEBREW_CELLAR, HOMEBREW_REPOSITORY. Подробнее см. brew shellenv --help
+eval "$(brew shellenv zsh)"
