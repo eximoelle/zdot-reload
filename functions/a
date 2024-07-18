@@ -1,0 +1,6 @@
+# This function helps in converting any STDIN JSON input to Markdown table
+# Usage: a '<text in JSON>'
+
+a () {
+    jq -r '. | to_entries[] | "||\(.key) | \(.value)||"' <<< $@ | sed -e '1s/^/#|\n/; $s/$/\n|#/'
+    }
