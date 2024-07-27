@@ -28,7 +28,7 @@ autoload -Uz compinit && compinit
 
 # Bind arrow up, arrow down to list history substring search
 # Refer to: https://github.com/zsh-users/zsh-history-substring-search#usage
-bindkey '^[[A' history-substring-search-up
-bindkey '^[[B' history-substring-search-down
+bindkey "$terminfo[kcuu1]" history-substring-search-up
+bindkey "$terminfo[kcud1]" history-substring-search-down
 
 test -e "${ZDOTDIR}/.iterm2_shell_integration.zsh" && source "${ZDOTDIR}/.iterm2_shell_integration.zsh"
