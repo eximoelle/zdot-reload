@@ -217,7 +217,7 @@ zdharma-continuum/fast-syntax-highlighting kind:defer
 #
 ###
 
-$BREWPREFIX/share/zsh/site-functions kind:fpath
+$(brew --prefix)/share/zsh/site-functions kind:fpath
 
 # With antidote, using Zephyr's completion plugin is recommended. This plugin is meant
 # to be run near the TOP of your .zsh_plugins.txt file.
