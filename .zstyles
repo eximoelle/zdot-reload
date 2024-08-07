@@ -7,5 +7,7 @@
 # Antidote
 #
 
-# zstyle ':antidote:bundle' file ${ZDOTDIR:-~}/.zplugins.txt
-# zstyle ':antidote:bundle' use-friendly-names 'yes'
+zstyle ':antidote:bundle' file ${ZDOTDIR:-~}/.zplugins.txt
+zstyle ':antidote:bundle' use-friendly-names 'yes'
+
+zstyle ':autocomplete:*' delay 0.1  # seconds (float), default 0.05
