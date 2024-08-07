@@ -227,7 +227,7 @@ mattmc3/zephyr path:plugins/completion
 
 # Most other compinit plugins should be near the END of .zsh_plugins.txt so that $fpath
 # has been fully populated. One such plugin is zsh-utils and its completion subplugin.
-belak/zsh-utils path:completion
+#belak/zsh-utils path:completion
 
 
 
@@ -240,5 +240,5 @@ belak/zsh-utils path:completion
 
 # These popular core plugins should be loaded at the end
 #zsh-users/zsh-autosuggestions kind:defer
-marlonrichert/zsh-autocomplete kind:defer
+marlonrichert/zsh-autocomplete
 zsh-users/zsh-history-substring-search
