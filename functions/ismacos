@@ -1,4 +1,4 @@
 #!/bin/zsh
-#function ismacos {
+function ismacos {
 [[ $OSTYPE = *darwin* ]] || return 1
-#}
+}

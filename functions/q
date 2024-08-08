@@ -1,3 +1,4 @@
+#!/bin/zsh
 # This function helps in converting any STDIN input to quoted text
 # Usage: q '<any text>'
 
