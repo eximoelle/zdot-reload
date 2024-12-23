@@ -6,10 +6,10 @@
 .zcompdump*
 .zsh_history
 .zplugins.zsh
-.iterm2*
 *.bak
 *.local
 *.local.zsh
 *.zwc
 *.zwc.old
 ~*
+.p10k.zsh
