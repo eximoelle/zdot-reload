@@ -54,3 +54,10 @@ $ q (<some plain text>)
 yazi — это файловый менеджер. После закрытия текущая директория изменяется на ту, с которой работали в yazi.
 
 Решение взято из [официальной документации](https://yazi-rs.github.io/docs/quick-start#shell-wrapper).
+
+### Proxy helper
+
+- `proxy on [url]` — включает SOCKS5-прокси (по умолчанию `socks5://127.0.0.1:2080`).
+- `proxy off` — убирает переменные `ALL_PROXY/HTTP_PROXY/HTTPS_PROXY`.
+
+По умолчанию прокси выключен.

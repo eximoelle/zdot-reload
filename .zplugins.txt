@@ -12,7 +12,7 @@ mattmc3/zephyr path:plugins/completion
 belak/zsh-utils path:completion/functions kind:autoload post:compstyle_zshzoo_setup
 
 # Keybindings
-belak/zsh-utils path:editor
+# belak/zsh-utils path:editor         # This override cursor blinking behavior
 
 # History
 belak/zsh-utils path:history     # Read more: https://github.com/belak/zsh-utils/blob/main/PLUGINS.md
