@@ -34,11 +34,11 @@ zsh-users/zsh-autosuggestions               # Auto-suggestions
 marlonrichert/zsh-autocomplete     # Read more: https://github.com/marlonrichert/zsh-autocomplete
 
 # NVM Node Version Manager https://github.com/lukechilds/zsh-nvm
-lukechilds/zsh-nvm kind:defer
+#lukechilds/zsh-nvm kind:defer
 
 # PyEnv Lazy Load https://github.com/davidparsson/zsh-pyenv-lazy
-davidparsson/zsh-pyenv-lazy kind:defer
+#davidparsson/zsh-pyenv-lazy kind:defer
 
 # JVM Java Version Manager https://github.com/caarlos0-graveyard/jvm
 #caarlos0/jvm kind:defer
-lockons/jdk-switch kind:defer
+#lockons/jdk-switch kind:defer
